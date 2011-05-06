@@ -1,4 +1,4 @@
-Capture HTML and Screen Shot of an URL
+Capture HTML and ScreenShot of an URL
 ======================================
 
 A Java library based on Selenium that captures HTML and screenshot of an URL.
