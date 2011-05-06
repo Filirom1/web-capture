@@ -1,4 +1,4 @@
-Capture HTML and Screen Shot of an URL
+Capture HTML and ScreenShot of an URL
 ======================================
 
 A Java library based on Selenium that captures HTML and screenshot of an URL.
@@ -35,7 +35,7 @@ Add in your pom :
         <dependency>
             <groupId>org.filirom1</groupId>
             <artifactId>web-capture</artifactId>
-            <version>0.1</version>
+            <version>0.1.1</version>
             <type>jar</type>
         </dependency>
     ...

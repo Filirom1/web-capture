@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.filirom1</groupId>
     <artifactId>web-capture</artifactId>
-    <version>0.1</version>
+    <version>0.1.1</version>
     <name>Web Capture</name>
     <description>Capture HTML and Screen Shot of an URL</description>
     <licenses>

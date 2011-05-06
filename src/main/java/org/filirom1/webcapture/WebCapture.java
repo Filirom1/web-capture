@@ -43,7 +43,7 @@ public class WebCapture {
     private ExecutorService executorService;
     private volatile boolean started = false;
 
-    void start() {
+    public void start() {
         if (!started) {
             executorService = Executors.newScheduledThreadPool(getConcurrentBrowser());
             log.info("Start Selenium Server on port " + port);
@@ -62,7 +62,7 @@ public class WebCapture {
         }
     }
 
-    void stop() {
+    public void stop() {
         if (started) {
             log.info("Stop Web Capture");
             executorService.shutdownNow();
@@ -82,7 +82,7 @@ public class WebCapture {
      * @param url to capture
      * @return the html and screenshot
      */
-    ScreenShotAndHTMLWrapper captureScreenShotAndHTML(String url) {
+    public ScreenShotAndHTMLWrapper captureScreenShotAndHTML(String url) {
         if (!started) {
             start();
         }
@@ -131,7 +131,7 @@ public class WebCapture {
      * @param url      to capture
      * @param callback to execute after capture.
      */
-    void captureScreenShotAndHTMLAsync(final String url, final AfterCaptureCallback callback) {
+    public void captureScreenShotAndHTMLAsync(final String url, final AfterCaptureCallback callback) {
         if (!started) {
             start();
         }
